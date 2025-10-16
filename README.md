@@ -156,6 +156,45 @@ The project began with acquiring and cleaning the Kaggle insurance dataset, ensu
 
 ## Findings/Conclusion
 
+### Dataset Investigation & Initial Analysis
+
+Before the main analysis, the dataset was explored to ensure quality and understand variable distributions.
+
+- Data Overview: Checked the number of rows, columns, data types, and basic statistics.
+- Missing Values & Anomalies: No missing values; outliers and inconsistencies were identified and handled.
+- Feature Understanding: Continuous variables like BMI and age were categorised; categorical variables like smoker status, sex, and number of children were reviewed.
+
+#### Key Distributions
+##### Numerical
+
+Histograms and boxplots were used to examine key variables:
+
+![Histogram of Numerical Features](figures/histograms_numeric_features.png)
+
+![Boxplot of Numerical Features](figures/boxplots_numeric_features.png)
+
+- BMI mostly falls within a healthy to overweight range.
+- Charges are positively skewed, reflecting higher costs for certain groups.
+
+##### Categorical
+Boxplots and grouped averages explored categorical variables:
+![Boxplots of Categoricals](figures/categorical_feature_distributions.png)
+[View Interactive Plot](/figures/categorical_feature_distributions.html)
+
+##### Correlations & Relationships
+Correlation matrices and scatter plots revealed relationships between numerical variables and charges:
+
+![Correlation Heatmap](figures/correlation_heatmap.png)
+
+- Charges are strongly correlated with Smoking, BMI and age.
+
+![alt text](figures/top_correlations_charges.png)
+
+- Smoking has the highest correlation with charges.
+- With gender and children have the least correlation.
+
+
+
 ## Main Data Analysis Libraries
 
 | Library        | Usage                                          |
