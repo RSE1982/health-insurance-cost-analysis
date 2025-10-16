@@ -21,6 +21,7 @@ def html_to_png(html_path, png_path, width=1500, height=800):
     # Set up headless Chrome
     options = webdriver.ChromeOptions()
     options.add_argument("--headless")
+    options.add_argument("--hide-scrollbars")
     # Set window size
     options.add_argument(f"--window-size={width},{height}")
     driver = webdriver.Chrome(options=options)
