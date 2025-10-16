@@ -179,7 +179,8 @@ Histograms and boxplots were used to examine key variables:
 ##### Categorical
 Boxplots and grouped averages explored categorical variables:
 ![Boxplots of Categoricals](figures/categorical_feature_distributions.png)
-[View Interactive Plot](/figures/categorical_feature_distributions.html)
+[View Interactive Plot](https://rse1982.github.io/health-insurance-cost-analysis/figures/categorical_feature_distributions.html)
+
 
 ##### Correlations & Relationships
 Correlation matrices and scatter plots revealed relationships between numerical variables and charges:
