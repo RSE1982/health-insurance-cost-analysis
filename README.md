@@ -272,7 +272,7 @@ Smokers consistently show higher charges across all age and BMI groups.
 ### H4: Gender has little or no significant effect on insurance charges
 
 ![Gender Analysis](figures/charges_by_gender.png)
-[View Interactive Plot (ctrl click to open in new tab)](https://rse1982.github.io/health-insurance-cost-analysis/figures/age_analysis_combined.html)
+[View Interactive Plot (ctrl click to open in new tab)](https://rse1982.github.io/health-insurance-cost-analysis/figures/charges_by_gender.html)
 
 ### H5: Geographic region may influence charges slightly
 
