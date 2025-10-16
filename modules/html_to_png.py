@@ -1,5 +1,10 @@
 """
 Convert a Plotly HTML file to a static PNG using headless Chrome.
+Requires selenium and a ChromeDriver installation.
+Requires: pip install selenium
+Download ChromeDriver from: https://sites.google.com/chromium.org/driver/
+
+Author: ChatGPT
 """
 
 import os
