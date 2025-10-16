@@ -155,6 +155,22 @@ Note: The hypotheses were tested through exploratory data analysis, with results
 └── README.md # Project documentation
 ```
 
+### [Project Board](https://github.com/users/RSE1982/projects/8/views/1)
+
+A GitHub Project Board will be used throughout this project.
+
+#### Board after setting up project
+
+![Board after Setting up Project](images/kanban_after_setup.png)
+
+#### Board at start of day 2
+
+![Board at start of Day 2](images/kanban_start_day_2.png)
+
+#### Board at end of Day 2
+
+![Board at end of Day 2](images/kanban_at_conclusion.png)
+
 ## Rationale
 
 ### Mapping Business Requirements to Data Visualisations
