@@ -2,6 +2,17 @@
 
 # 🏥 Healthcare Insurance Cost Analysis
 
+![Python](https://img.shields.io/badge/Python-3.12-blue)
+![Jupyter Notebook](https://img.shields.io/badge/Jupyter-Notebook-orange)
+![VSCode](https://img.shields.io/badge/Editor-VSCode-blueviolet)
+![Plotly](https://img.shields.io/badge/Plotly-Interactive%20Plots-orange)
+![Status](https://img.shields.io/badge/Project-Complete-brightgreen)
+![Pandas](https://img.shields.io/badge/Library-pandas-150458.svg?logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/Library-NumPy-013243.svg?logo=numpy&logoColor=white)
+![Seaborn](https://img.shields.io/badge/Library-Seaborn-3791A0)
+![Matplotlib](https://img.shields.io/badge/Library-Matplotlib-11557c)
+![Dataset](https://img.shields.io/badge/Dataset-Kaggle-blue)
+
 Individual Formative Project – Code Institute Data Analytics with AI Bootcamp
 
 | | |
@@ -14,9 +25,9 @@ Individual Formative Project – Code Institute Data Analytics with AI Bootcamp
 1. [Project Overview](#project-overview)
 2. [Dataset Content](#dataset-content)
 3. [Business Requirements](#business-requirements)
-4. [Prioject Plan](#project-plan)
-5. [Rationale](#rationale-mapping-business-requirements-to-data-visualisations)
-6. [Analysis Techniques](#analysis-techniques-used)
+4. [Project Plan](#project-plan)
+5. [Rationale](#rationale)
+6. [Analysis Techniques](#analysis-techniques)
 7. [Ethical Considerations](#ethical-considerations)
 8. [Unfixed Bugs](#unfixed-bugs)
 9. [Development Roadmap](#development-roadmap)
@@ -24,21 +35,31 @@ Individual Formative Project – Code Institute Data Analytics with AI Bootcamp
 11. [Libraries](#main-data-analysis-libraries)
 12. [Installation](#installation)
 13. [Credits](#credits)
-14. [Acknowledgements](#acknowledgements-optional)
+14. [Acknowledgements](#acknowledgements)
 
 ## Project Overview
 
-Healthcare Insurance Cost Analysis explores a dataset from Kaggle to understand how personal and geographic attributes influence medical insurance charges.
+Healthcare Insurance Cost Analysis explores a publicly available Kaggle dataset to understand how personal and geographic attributes influence medical insurance charges.
 
-The project applies data extraction, transformation, and loading (ETL) techniques, followed by exploratory data analysis (EDA) and visualisation, to reveal trends in healthcare costs based on age, BMI, smoking habits, family size, and region.
+The project applies data extraction, transformation, and loading (ETL) techniques, followed by exploratory data analysis (EDA) and visualisation. The aim is to reveal trends in healthcare costs based on:
+
+- Age
+- Body Mass Index (BMI)
+- Smoking habits
+- Family size
+- Region
 
 This project was completed as part of the Code Institute Data Analytics with AI Bootcamp and meets all criteria for the Individual Formative Assignment.
+
+Objective: Identify which demographic and lifestyle factors most influence insurance charges through exploratory and statistical analysis.
 
 ## Dataset Content
 
 ### Data Source
 
-The dataset contains 1,338 records with the following fields:
+**Source:** [Kaggle – Healthcare Insurance Dataset](https://www.kaggle.com/datasets/willianoliveiragibin/healthcare-insurance)
+
+**Dataset Size:** 1,338 records with the following fields:
 
 | Feature   | Description |
 |-----------|-------------|
@@ -94,6 +115,8 @@ Larger families may increase policy coverage, though the individual impact may b
 
 These hypotheses guide the Exploratory Data Analysis (EDA) phase, ensuring that each visualisation and statistical test helps confirm or challenge these assumptions.
 
+Note: The hypotheses were tested through exploratory data analysis, with results discussed in the Findings and Conclusion section.
+
 ## Project Plan
 
 ### Project Management
@@ -120,7 +143,21 @@ These hypotheses guide the Exploratory Data Analysis (EDA) phase, ensuring that 
 - Project Management: GitHub Projects
 - Data Source: Kaggle
 
-## Rationale: Mapping Business Requirements to Data Visualisations
+### Repository Structure
+
+```[]
+├── data/ # Raw and cleaned datasets
+├── figures/ # Static and interactive plots
+├── images # screenshots of project board
+├── notebooks/ # Jupyter notebooks for analysis
+├── modules/ # Custom Python modules
+├── requirements.txt # Project dependencies
+└── README.md # Project documentation
+```
+
+## Rationale
+
+### Mapping Business Requirements to Data Visualisations
 
 | Hypothesis / Business Question       | Chosen Visualisation              | Purpose / Rationale                                                                                                         |
 | ------------------------------------ | --------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
@@ -132,7 +169,7 @@ These hypotheses guide the Exploratory Data Analysis (EDA) phase, ensuring that 
 | H6: Number of children vs charges    | Box plot or scatter plot          | Visualises whether individuals with more dependents have higher insurance costs.                                            |
 | Overall attribute impact             | Pair plots or correlation heatmap | Provides a broad view of relationships among multiple variables to identify which attributes most influence charges.        |
 
-## Analysis techniques used
+## Analysis Techniques
 
 - Descriptive Statistics: Calculated summary measures for numeric and categorical variables to understand distributions, central tendencies, and variability.
 - Exploratory Data Visualisation: Created interactive plots (scatter plots, box plots, bar charts, and trendlines) to examine relationships between personal attributes (e.g., age, BMI, smoking status) and healthcare charges.
@@ -247,6 +284,41 @@ These insights provide a solid foundation for predictive modelling, risk assessm
 - Exploring regression or machine learning models to predict insurance charges.
 - Developing interactive dashboards for dynamic exploration of the dataset.
 
+## Project Review
+
+This project successfully explored the Kaggle Insurance Charges dataset to identify key factors influencing insurance costs. The analysis combined data cleaning, exploratory visualisation, and hypothesis testing to draw meaningful insights.
+
+### Achievements
+
+- Produced clear and interpretable static and interactive visualisations using Plotly and Seaborn.
+- Verified that smoking status and BMI are dominant predictors of insurance charges.
+- Documented a transparent, reproducible workflow suitable for further analysis or model development.
+
+### Challenges
+
+- Managing outliers and skewed charge distributions required careful handling.
+- Correlation analysis was limited in establishing causality.
+- Some essential libraries (e.g., Plotly, Kaleido, Statsmodels) were not initially included in the requirements.txt file and had to be added manually to ensure reproducibility.
+- Encountered issues exporting interactive Plotly figures to PNG format; this was resolved by creating a custom Python module with assistance from ChatGPT to automate image saving.
+- The dataset lacked broader socioeconomic variables, limiting the depth of interpretat
+
+### Learning Outcomes
+
+- Strengthened data analysis and visualisation skills using Plotly, Seaborn, and pandas.
+- Improved understanding of dependency management and environment setup through requirements.txt updates.
+- Gained practical experience in debugging and extending Plotly functionality through modular Python development.
+- Enhanced ability to structure projects for clarity, transparency, and reproducibility.
+- Developed greater awareness of ethical considerations when handling sensitive or potentially biased data.
+
+### Future Work
+
+- Extend analysis with regression or predictive modelling.
+- Incorporate additional datasets for more comprehensive insights.
+- Modernise the codebase with Python 3.14 and updated library versions.
+- Explore automated report generation or dashboard deployment for greater interactivity.
+
+> *Overall, this project deepened my understanding of real-world data analysis workflows — from hypothesis formulation and visual exploration to environment management and reproducibility. It also strengthened my Python and data storytelling skills, which I aim to apply in future analytical and development roles.*
+
 ## Main Data Analysis Libraries
 
 | Library        | Usage                                          |
@@ -260,22 +332,16 @@ These insights provide a solid foundation for predictive modelling, risk assessm
 
 ## Installation
 
-### 1. Clone this repository:
-
 ```[bash]
-git clone https://github.com/RSE1982/health-insurance-cost-analysis
-cd healthcare-insurance-cost-analysis
-```
+# 1. Clone repository
+git clone https://github.com/RSE1982/health-insurance-cost-analysis.git
+cd health-insurance-cost-analysis
 
-### 2. Create Virtual Environment:
-
-```[bash]
+# 2. Create a virtual environment
 python -m venv .venv
-```
+source .venv/bin/activate  # or .venv\Scripts\activate on Windows
 
-### 3. Install Dependencies:
-
-```[bash]
+# 3. Install dependencies
 pip install -r requirements.txt
 ```
 
@@ -293,4 +359,11 @@ pip install -r requirements.txt
 - All charts, plots, and figures were created by the project author using Python libraries.
 - No external images or media were used.
 
-## Acknowledgements (optional)
+## Acknowledgements
+
+I would like to thank the **Code Institute tutors, mentors, and Discord community** for their continuous guidance and encouragement throughout this project.  
+
+Special thanks to **ChatGPT (OpenAI)** for technical assistance in debugging, improving code efficiency, and developing a custom Python module for exporting Plotly visualisations.  
+
+The dataset used in this project was sourced from [Kaggle – Healthcare Insurance Dataset](https://www.kaggle.com/datasets/willianoliveiragibin/healthcare-insurance), which provided the foundation for this analysis.  
+
