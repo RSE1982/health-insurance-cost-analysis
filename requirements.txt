@@ -16,3 +16,4 @@ Pillow==10.0.1 # can be removed from requirements before deployment
 ### Requirements I added ### 
 nbformat>=4.2.0 # added for jupyter notebook compatibility
 ipykernel>=5.1.0 # added for jupyter notebook compatibility
+selenium>=4.1.0 # added for static image export with plotly
