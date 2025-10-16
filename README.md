@@ -4,8 +4,10 @@
 
 Individual Formative Project – Code Institute Data Analytics with AI Bootcamp
 
-Author: Robert Steven Elliott
-Date: October 2025
+| | |
+|--------|---------------------|
+|Author: |Robert Steven Elliott|
+|Date:   | October 2025        |
 
 ## Table of Contents
 
@@ -18,7 +20,7 @@ Date: October 2025
 7. [Ethical Considerations](#ethical-considerations)
 8. [Unfixed Bugs](#unfixed-bugs)
 9. [Development Roadmap](#development-roadmap)
-10. [Findings/Conlcusion](#findingsconcusion)
+10. [Findings/Conclusion](#findingsconclusion)
 11. [Libraries](#main-data-analysis-libraries)
 12. [Installation](#installation)
 13. [Credits](#credits)
@@ -26,8 +28,7 @@ Date: October 2025
 
 ## Project Overview
 
-Healthcare Insurance Cost Analysis explores a dataset from Kaggle
- to understand how personal and geographic attributes influence medical insurance charges.
+Healthcare Insurance Cost Analysis explores a dataset from Kaggle to understand how personal and geographic attributes influence medical insurance charges.
 
 The project applies data extraction, transformation, and loading (ETL) techniques, followed by exploratory data analysis (EDA) and visualisation, to reveal trends in healthcare costs based on age, BMI, smoking habits, family size, and region.
 
@@ -142,11 +143,18 @@ These hypotheses guide the Exploratory Data Analysis (EDA) phase, ensuring that 
 
 ## Ethical considerations
 
+This project uses a publicly available Kaggle dataset containing insurance data, including age, sex, BMI, smoking status, and insurance charges. All analyses ensure individual privacy, with no personally identifiable information exposed. Potential biases in variables such as smoker status, sex, and BMI are acknowledged, and correlations are interpreted responsibly, without implying causation. Analytical steps are documented for transparency and reproducibility, and users are cautioned against applying the findings in ways that could lead to unfair discrimination or privacy breaches.
+
 ## Unfixed Bugs
+
+- Code for generating subplots could be neater and in it's own function
+- The libraries required by Code Institute are old, i have had to silence FutureWarnings to account for this.
 
 ## Development Roadmap
 
-## Findings/Concusion
+The project began with acquiring and cleaning the Kaggle insurance dataset, ensuring data quality and consistency. Exploratory data analysis was conducted to uncover patterns and relationships between variables such as age, BMI, smoking status, and insurance charges. Features were engineered, including categorisation of continuous variables, to enhance insights and support hypothesis testing. The analysis was visualised through clear and interpretable plots, highlighting key trends and correlations. Future improvements could include updating the code to use the latest Python and library versions, exploring predictive models, and developing interactive dashboards for more dynamic insights.
+
+## Findings/Conclusion
 
 ## Main Data Analysis Libraries
 
@@ -184,6 +192,14 @@ pip install -r requirements.txt
 
 ### Content
 
+- Kaggle Dataset: “Insurance Charges Dataset” ([link](https://www.kaggle.com/datasets/willianoliveiragibin/healthcare-insurance))
+- Python libraries used for analysis and visualisation: pandas, numpy, plotly, seaborn, matplotlib
+- Guidance and code suggestions provided by ChatGPT (OpenAI)
+- Tutorials and documentation consulted for analysis methods and data handling
+
 ### Media
+
+- All charts, plots, and figures were created by the project author using Python libraries.
+- No external images or media were used.
 
 ## Acknowledgements (optional)
