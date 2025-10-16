@@ -1,7 +1,12 @@
-from selenium import webdriver
-import os
+"""
+Convert a Plotly HTML file to a static PNG using headless Chrome.
+"""
 
-def html_to_png(html_path, png_path, width=1200, height=600):
+import os
+from selenium import webdriver
+
+
+def html_to_png(html_path, png_path, width=1500, height=800):
     """
     Convert a Plotly HTML file to a static PNG using headless Chrome.
 
@@ -12,12 +17,12 @@ def html_to_png(html_path, png_path, width=1200, height=600):
         height (int): Browser height in pixels.
     """
     # Make sure the output folder exists
-    os.makedirs(os.path.dirname(png_path), exist_ok=True)
-    
+    os.makedirs(os.path.dirname(png_path), exist_ok=True)  
     # Set up headless Chrome
     options = webdriver.ChromeOptions()
     options.add_argument("--headless")
-    options.add_argument(f"--window-size={width},{height}")  # set viewport size
+    # Set window size
+    options.add_argument(f"--window-size={width},{height}")
     driver = webdriver.Chrome(options=options)
 
     # Open the HTML file
