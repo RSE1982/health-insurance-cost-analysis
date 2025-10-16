@@ -235,6 +235,18 @@ Smokers consistently show higher charges across all age and BMI groups.
 
 BMI and smoking are the dominant factors influencing charges. Age and number of children have moderate effects, while gender and region show minimal impact. These results largely align with the original hypotheses.
 
+## Conclusion
+
+- Strongest Predictors: Smoking status and BMI have the largest impact on insurance charges.
+- Moderate Predictors: Age and number of children show smaller effects.
+- Minimal Impact: Gender and geographic region have little effect after controlling for other factors.
+
+These insights provide a solid foundation for predictive modelling, risk assessment, and further exploratory analysis. Future improvements could include:
+
+- Updating code to the latest Python and library versions.
+- Exploring regression or machine learning models to predict insurance charges.
+- Developing interactive dashboards for dynamic exploration of the dataset.
+
 ## Main Data Analysis Libraries
 
 | Library        | Usage                                          |
