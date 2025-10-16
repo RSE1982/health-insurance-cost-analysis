@@ -218,6 +218,22 @@ Smokers consistently show higher charges across all age and BMI groups.
 
 ### H4: Gender has little or no significant effect on insurance charges
 
+![Gender Analysis](figures/charges_by_gender.png)
+[View Interactive Plot (ctrl click to open in new tab)](https://rse1982.github.io/health-insurance-cost-analysis/figures/age_analysis_combined.html)
+
+### H5: Geographic region may influence charges slightly
+
+![Region Analysis](figures/charges_by_region.png)
+[View Interactive Plot (ctrl click to open in new tab)](https://rse1982.github.io/health-insurance-cost-analysis/figures/charges_by_region.html)
+
+### H6: Individuals with more children may experience slightly higher insurance costs
+
+![Family Size Analysis](figures/children_analysis_combined.png)
+[View Interactive Plot (ctrl click to open in new tab)](https://rse1982.github.io/health-insurance-cost-analysis/figures/children_analysis_combined.html)
+
+### Summary
+
+BMI and smoking are the dominant factors influencing charges. Age and number of children have moderate effects, while gender and region show minimal impact. These results largely align with the original hypotheses.
 
 ## Main Data Analysis Libraries
 
