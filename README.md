@@ -36,6 +36,7 @@ Individual Formative Project – Code Institute Data Analytics with AI Bootcamp
 12. [Installation](#installation)
 13. [Credits](#credits)
 14. [Acknowledgements](#acknowledgements)
+15. [Version](#version-history)
 
 ## Project Overview
 
@@ -382,4 +383,14 @@ I would like to thank the **Code Institute tutors, mentors, and Discord communit
 Special thanks to **ChatGPT (OpenAI)** for technical assistance in debugging, improving code efficiency, and developing a custom Python module for exporting Plotly visualisations.  
 
 The dataset used in this project was sourced from [Kaggle – Healthcare Insurance Dataset](https://www.kaggle.com/datasets/willianoliveiragibin/healthcare-insurance), which provided the foundation for this analysis.  
+
+## Version History
+
+### v1.1 – Dependency Refresh (Python 3.12)
+- Updated pandas, numpy, scikit-learn, and Streamlit to current stable versions
+- Improved compatibility with latest data science tooling
+- No changes to core functionality or data schema
+
+### v1.0 – Initial Release
+- Original Individual Informative Project submission
 
