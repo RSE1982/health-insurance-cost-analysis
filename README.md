@@ -222,9 +222,9 @@ Before the main analysis, the dataset was explored to ensure quality and underst
 
 Histograms and boxplots were used to examine key variables:
 
-![Histogram of Numerical Features](figures/histograms_numeric_features.png)
+![Histogram of Numerical Features](figures/numeric_features_distribution.png)
 
-![Boxplot of Numerical Features](figures/boxplots_numeric_features.png)
+![Boxplot of Numerical Features](figures/numeric_features_outliers.png)
 
 - BMI mostly falls within a healthy to overweight range.
 - Charges are positively skewed, reflecting higher costs for certain groups.
@@ -232,8 +232,8 @@ Histograms and boxplots were used to examine key variables:
 ##### Categorical
 
 Boxplots and grouped averages explored categorical variables:
-![Boxplots of Categoricals](figures/categorical_feature_distributions.png)
-[View Interactive Plot (ctrl click to open in new tab)](https://rse1982.github.io/health-insurance-cost-analysis/figures/categorical_feature_distributions.html)
+![Boxplots of Categoricals](figures/categorical_feature_distribution.png)
+[View Interactive Plot (ctrl click to open in new tab)](https://rse1982.github.io/health-insurance-cost-analysis/figures/categorical_feature_distribution.html)
 
 ##### Correlations & Relationships
 
@@ -243,7 +243,7 @@ Correlation matrices and scatter plots revealed relationships between numerical 
 
 - Charges are strongly correlated with Smoking, BMI and age.
 
-![Top Correlation with charges](figures/top_correlations_charges.png)
+![Top Correlation with charges](figures/top_charges_correlation.png)
 
 - Smoking has the highest correlation with charges.
 - With gender and children have the least correlation.
@@ -256,33 +256,33 @@ The following hypotheses were tested. Each includes a static plot and a link to 
 
 Smokers consistently show higher charges across all age and BMI groups.
 
-![Boxplot showing ](figures/charges_by_smoking_status.png)
+![Boxplot showing ](figures/charges_by_smoking_status.png)\
 [View Interactive Plot (ctrl click to open in new tab)](https://rse1982.github.io/health-insurance-cost-analysis/figures/charges_by_smoking_status.html)
 
 ### H2: Higher BMI correlates with higher insurance charges
 
-![BMI Analysis](figures/bmi_analysis_combined.png)
-[View Interactive Plot (ctrl click to open in new tab)](https://rse1982.github.io/health-insurance-cost-analysis/figures/bmi_analysis_combined.html)
+![BMI Analysis](figures/bmi_charges_smoking_analysis.png)\
+[View Interactive Plot (ctrl click to open in new tab)](https://rse1982.github.io/health-insurance-cost-analysis/figures/bmi_charges_smoking_analysis.html)
 
 ### H3: Age positively correlates with insurance charges
 
-![Age Analysis](figures/age_analysis_combined.png)
-[View Interactive Plot (ctrl click to open in new tab)](https://rse1982.github.io/health-insurance-cost-analysis/figures/age_analysis_combined.html)
+![Age Analysis](figures/age_charges_smoking_analysis.png)\
+[View Interactive Plot (ctrl click to open in new tab)](https://rse1982.github.io/health-insurance-cost-analysis/figures/age_charges_smoking_analysis.html)
 
 ### H4: Gender has little or no significant effect on insurance charges
 
-![Gender Analysis](figures/charges_by_gender.png)
+![Gender Analysis](figures/charges_by_gender.png)\
 [View Interactive Plot (ctrl click to open in new tab)](https://rse1982.github.io/health-insurance-cost-analysis/figures/charges_by_gender.html)
 
 ### H5: Geographic region may influence charges slightly
 
-![Region Analysis](figures/charges_by_region.png)
+![Region Analysis](figures/charges_by_region.png)\
 [View Interactive Plot (ctrl click to open in new tab)](https://rse1982.github.io/health-insurance-cost-analysis/figures/charges_by_region.html)
 
 ### H6: Individuals with more children may experience slightly higher insurance costs
 
-![Family Size Analysis](figures/children_analysis_combined.png)
-[View Interactive Plot (ctrl click to open in new tab)](https://rse1982.github.io/health-insurance-cost-analysis/figures/children_analysis_combined.html)
+![Family Size Analysis](figures/children_charges_family_size_analysis.png)
+[View Interactive Plot (ctrl click to open in new tab)](https://rse1982.github.io/health-insurance-cost-analysis/figures/children_charges_family_size_analysis.html)
 
 ### Summary
 
@@ -383,3 +383,12 @@ Special thanks to **ChatGPT (OpenAI)** for technical assistance in debugging, im
 
 The dataset used in this project was sourced from [Kaggle – Healthcare Insurance Dataset](https://www.kaggle.com/datasets/willianoliveiragibin/healthcare-insurance), which provided the foundation for this analysis.  
 
+## Version History
+
+### v1.1 – Dependency Refresh (Python 3.12)
+- Updated pandas, numpy, scikit-learn, and Streamlit to current stable versions
+- Improved compatibility with latest data science tooling
+- No changes to core functionality or data schema
+
+### v1.0 – Initial Release
+- Original Individual Informative Project submission
