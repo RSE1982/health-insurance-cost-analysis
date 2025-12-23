@@ -36,6 +36,7 @@ Individual Formative Project – Code Institute Data Analytics with AI Bootcamp
 12. [Installation](#installation)
 13. [Credits](#credits)
 14. [Acknowledgements](#acknowledgements)
+15. [Version](#version-history)
 
 ## Project Overview
 
@@ -392,3 +393,4 @@ The dataset used in this project was sourced from [Kaggle – Healthcare Insuran
 
 ### v1.0 – Initial Release
 - Original Individual Informative Project submission
+
