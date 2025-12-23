@@ -7,18 +7,21 @@ import numpy as np
 import pandas as pd
 
 
-def clean_insurance_data(df: pd.DataFrame,
-                         date_columns: list = None,
-                         categorical_cols: list = None,
-                         string_columns: list = None) -> pd.DataFrame:
+def clean_data(df: pd.DataFrame,
+               date_columns: list = None,
+               categorical_cols: list = None,
+               string_columns: list = None) -> pd.DataFrame:
     """
-    Clean the insurance data DataFrame.
+    Clean the data DataFrame.
 
     Parameters:
-    df (pd.DataFrame): The raw insurance data DataFrame.
-
+        df (pd.DataFrame): The raw insurance data DataFrame.
+        date_columns (list): List of columns to convert to datetime.
+        categorical_cols (list): List of columns to convert to category dtype.
+        string_columns (list): List of columns to convert to string dtype.
     Returns:
-    pd.DataFrame: A cleaned DataFrame with no missing values and correct data types.
+        pd.DataFrame: A cleaned DataFrame with no missing values and correct
+        data types.
     """
     # Drop duplicates
     df = df.drop_duplicates()
@@ -49,6 +52,7 @@ def clean_insurance_data(df: pd.DataFrame,
 
     return df
 
+
 def data_overview(df: pd.DataFrame) -> None:
     """
     Print an overview of the DataFrame including shape, data types, and missing values.
@@ -76,7 +80,7 @@ def load_data(file_path: str) -> pd.DataFrame:
     """
     try:
         df = pd.read_csv(file_path)
-        df = clean_insurance_data(df)
+        df = clean_data(df)
         return df
     except FileNotFoundError:
         print(f"Error: The file at {file_path} was not found.")
