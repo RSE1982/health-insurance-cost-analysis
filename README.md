@@ -255,8 +255,6 @@ The following hypotheses were tested. Each includes a static plot and a link to 
 
 ### H1: Smoking status significantly increases insurance charges
 
-Smokers consistently show higher charges across all age and BMI groups.
-
 ![Boxplot showing ](figures/charges_by_smoking_status.png)\
 [View Interactive Plot (ctrl click to open in new tab)](https://rse1982.github.io/health-insurance-cost-analysis/figures/charges_by_smoking_status.html)
 
@@ -284,6 +282,17 @@ Smokers consistently show higher charges across all age and BMI groups.
 
 ![Family Size Analysis](figures/children_charges_family_size_analysis.png)
 [View Interactive Plot (ctrl click to open in new tab)](https://rse1982.github.io/health-insurance-cost-analysis/figures/children_charges_family_size_analysis.html)
+
+### Summary of Findings
+
+| Hypothesis | Outcome | Evidence |
+|-------------|----------|-----------|
+| **H1** Smoking status increases charges | ✅ Confirmed | Box plot and correlation show smokers pay far more |
+| **H2** Higher BMI leads to higher charges | ✅ Supported | Scatter and heatmap confirm positive trend |
+| **H3** Age correlates positively with charges | ✅ Confirmed | Scatter and correlation coefficients support this |
+| **H4** Gender has minimal effect | ✅ Supported | Box plot shows negligible difference |
+| **H5** Regional effects minor | ✅ Supported | Box plot and correlation show minimal influence |
+| **H6** More children slightly raise costs | ⚠️ Partly supported | Weak positive relationship seen in box plot |
 
 ### Summary
 
